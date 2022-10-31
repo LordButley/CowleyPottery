@@ -1,3 +1,9 @@
 html {
     height: 100%;
 }
+
+#landing-image{
+    background:url(/media/landing_placeholder.jpg);
+    background-position: center top;
+    background-size: cover;
+}

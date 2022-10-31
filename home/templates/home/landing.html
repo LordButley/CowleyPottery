@@ -1,10 +1,14 @@
-{% extends "base.html" %}
+{% extends "base_landing.html" %}
 {% load static %}
 
 {% block content %}
-    <div class="container-fluid h-100">
-        <h1>Cowley Pottery</h1>
-        <h2>Lorem ipsum</h2>
-        <button>Enter</button>
+    <div class="container-fluid vh-100 text-center text-white" id="landing-image">
+        <div class="row h-50 align-items-center">
+            <div class="col">
+                <h1 >Cowley Pottery</h1>
+                <h4 >Handmade pottery lovingly made in the heart of Devon</h3>
+                <a href="{% url 'home' %}">Enter</a>
+            </div>
+        </div>
     </div>
 {% endblock %}
