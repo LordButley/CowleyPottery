@@ -4,6 +4,19 @@ html {
     height: 100%;
 }
 
+body {
+    background-color: #d7cdc5;
+}
+
+h1 {
+    font-family: "Chelsea Market", sans-serif;
+}
+
+p {
+    font-family: "Varta", sans-serif;
+    font-weight: bold;
+}
+
 #landing-image{
     background:url(/media/landing_placeholder.jpg);
     background-position: center top;
@@ -12,4 +25,17 @@ html {
 
 .info-footer{
     background-color: darkslategray;
+}
+
+#logo{
+    font-family: "Rampart One", san-serif;
+    font-size: xx-large;
+    color: black;
+    font-weight: bolder;
+}
+
+.nav-link{
+    font-family:"Chelsea Market", sans-serif;
+    color:black;
+    font-size: large;
 }
