@@ -39,3 +39,10 @@ p {
     color:black;
     font-size: large;
 }
+
+.tile-image{
+    max-height: 300px;
+    min-width: 100%;
+    overflow:hidden;
+    object-fit: cover;
+}
