@@ -54,3 +54,20 @@ p {
 .image-top-align {
     object-position: top;
 }
+
+
+/* footer styles */
+
+footer a {
+    /* color:black; */
+    /* text-decoration: none; */
+}
+
+footer ul {
+    padding-left: 0;
+    font-family: "Varta", sans-serif;
+    font-weight: bold;
+}
+footer li {
+    list-style: none;
+}
