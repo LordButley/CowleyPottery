@@ -46,6 +46,7 @@ p {
 
 .tile-image{
     max-height: 300px;
+    height:60%;
     min-width: 100%;
     overflow:hidden;
     object-fit: cover;
@@ -70,4 +71,10 @@ footer ul {
 }
 footer li {
     list-style: none;
+}
+
+@media screen and (max-width: 420px){
+    .tile-image{
+        height:50%;
+    }
 }
