@@ -40,6 +40,10 @@ p {
     font-size: large;
 }
 
+.burger-icon{
+    font-size: 2rem;
+}
+
 .tile-image{
     max-height: 300px;
     min-width: 100%;
