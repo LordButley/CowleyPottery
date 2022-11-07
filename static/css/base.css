@@ -8,7 +8,7 @@ body {
     background-color: #d7cdc5;
 }
 
-h1 {
+h1, h2 {
     font-family: "Chelsea Market", sans-serif;
 }
 
@@ -45,4 +45,8 @@ p {
     min-width: 100%;
     overflow:hidden;
     object-fit: cover;
+}
+
+.image-top-align {
+    object-position: top;
 }
