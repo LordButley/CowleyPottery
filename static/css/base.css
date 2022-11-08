@@ -73,6 +73,8 @@ footer li {
     list-style: none;
 }
 
+/* Change to min width */
+
 @media screen and (max-width: 420px){
     .tile-image{
         height:50%;
