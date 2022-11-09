@@ -40,4 +40,4 @@ class Product_Category(models.Model):
 
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     product = models.ForeignKey('Product', null=True, blank=True, on_delete=models.SET_NULL)
-
+    
