@@ -40,9 +40,10 @@
 
         </div>
         <div class="col-12 col-md-4 col-xxl-3 pt-2">
-            <img class="img-fluid rounded-3 tile-image" src="/media/bluemugfade.jpg" alt="Pottery examples">
             <div class="px-2 pt-2">
-                {{ product in product_categories}}
+                {% for product in product_categories %}
+                    {{product.product.name}}
+                {% endfor %}
             </div>
             <!-- </div> -->
             <!-- <div class="col-12 col-md-4 my-auto"> -->
