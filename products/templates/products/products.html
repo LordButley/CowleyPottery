@@ -21,7 +21,7 @@
 
         </div>
     </div>
-    <div class="row h-100 justify-content-around">
+    <!-- <div class="row h-100 justify-content-around">
         <div class="col-12 col-md-6 col-xxl-4">
             <div class="card text-bg-dark">
                 <img class="img-thumbnail" src="/media/all.jpg" class="card-img" alt="Lots of different pottery">
@@ -40,7 +40,7 @@
                 <img class="img-thumbnail" src="/media/all.jpg" class="card-img" alt="Lots of different pottery">
                 <div class="tile-overlay">
                     <div class="tile-title p-2">
-                        <a href="{% url 'all_products' %}">
+                        <a href="#">
                             <h6>All items</h6>
                         </a>
                     </div>
@@ -48,19 +48,21 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="row h-100 justify-content-center px-2">
-        {% for category in categories %}
+        {{products}}
+        
+        {% for product_category in product_categories %}
 
 
 
         <div class="col-12 col-md-4 col-xxl-3 pt-2 pb-2">
             <div class="card text-bg-dark  ratio-4x3">
-                <img class="img-thumbnail shop-tile rounded-3" src="/media/{{category.image }}" alt="{{category.name}} image">
+                <img class="img-thumbnail shop-tile rounded-3" src="/media/{{product_category.product.image }}" alt="{{product_category.product.name}} image">
                 <div class="tile-overlay">
                     <div class="tile-title p-2">
-                        <a href="{% url 'all_products'%}?category={{category.name}}">
-                            <h6>{{category.readable_name}}</h6>
+                        <a href="#">
+                            <h6>{{product_category.product.name}}</h6>
                         </a>
                     </div>
                 </div>
