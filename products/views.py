@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Product, Product_Category, Category
+from datetime import datetime, timedelta
 
 # Create your views here.
 
@@ -27,8 +28,11 @@ def all_products(request):
     if request.GET:
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
-            product_categories = product_categories.filter(category__name__in=categories)
-            # categories = Category.objects.filter(name__in=categories)
+            if 'new' in categories:
+                # product_categories = "Check"
+                product_categories = product_categories.exclude(product__date_added__lt = (datetime.today() - timedelta(weeks=4)))
+            else:
+                product_categories = product_categories.filter(category__name__in=categories)
 
     context = {
         'product_categories': product_categories,

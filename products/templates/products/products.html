@@ -21,42 +21,11 @@
 
         </div>
     </div>
-    <!-- <div class="row h-100 justify-content-around">
-        <div class="col-12 col-md-6 col-xxl-4">
-            <div class="card text-bg-dark">
-                <img class="img-thumbnail" src="/media/all.jpg" class="card-img" alt="Lots of different pottery">
-                <div class="tile-overlay">
-                    <div class="tile-title p-2">
-                        <a href="#">
-                            <h6>New in stock</h6>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-xxl-4">
-            <div class="card text-bg-dark">
-                <img class="img-thumbnail" src="/media/all.jpg" class="card-img" alt="Lots of different pottery">
-                <div class="tile-overlay">
-                    <div class="tile-title p-2">
-                        <a href="#">
-                            <h6>All items</h6>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="row h-100 justify-content-center px-2">
-        {{products}}
         
         {% for product_category in product_categories %}
 
-
-
-        <div class="col-12 col-md-4 col-xxl-3 pt-2 pb-2">
+        <div class="col-12 col-sm-6 col-md-4 col-xxl-3 pt-2 pb-2">
             <div class="card text-bg-dark  ratio-4x3">
                 <img class="img-thumbnail shop-tile rounded-3" src="/media/{{product_category.product.image }}" alt="{{product_category.product.name}} image">
                 <div class="tile-overlay">
