@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid h-100">
+    <div class="row h-100 justify-content-center bg-white">
+        <!-- <div class="col-12 col-md-4 my-auto">
+            <img class="img-fluid rounded-3" src="/media/homepage1.jpg" alt="Pottery examples">
+        </div> -->
+        <div class="col-12 col-md-6 my-auto text-center">
+            <h1>
+                Welcome to Cowley Pottery
+            </h1>
+            <p>
+                Welcome to Cowley Pottery. In the heart of Devon, Helen crafts by hand all pieces from scratch in her
+                tiny little studio barely big enough for one person. If you'd like to see recent creations please visit
+                the shop. You can also find out more about Helen's journey and craft on the About page.
+                <br>
+                Feel free to get in contact about any pieces you want but are unavailable and I'll get back to you.
+            </p>
+
+        </div>
+    </div>
+    <div class="row h-100 justify-content-around">
+        <div class="col-12 col-md-6 col-xxl-4">
+            <div class="card text-bg-dark">
+                <img class="img-thumbnail" src="/media/all.jpg" class="card-img" alt="Lots of different pottery">
+                <div class="tile-overlay">
+                    <div class="tile-title p-2">
+                        <a href="#">
+                            <h6>New in stock</h6>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-xxl-4">
+            <div class="card text-bg-dark">
+                <img class="img-thumbnail" src="/media/all.jpg" class="card-img" alt="Lots of different pottery">
+                <div class="tile-overlay">
+                    <div class="tile-title p-2">
+                        <a href="#">
+                            <h6>All items</h6>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row h-100 justify-content-center px-2">
+        {% for category in categories %}
+
+
+
+        <div class="col-12 col-md-4 col-xxl-3 pt-2 pb-2">
+            <div class="card text-bg-dark  ratio-4x3">
+                <img class="img-thumbnail shop-tile rounded-3" src="/media/{{category.image }}" alt="{{category.name}} image">
+                <div class="tile-overlay">
+                    <div class="tile-title p-2">
+                        <a href="#">
+                            <h6>{{category.readable_name}}</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        {% endfor %}
+
+    </div>
+</div>
+{% endblock %}
