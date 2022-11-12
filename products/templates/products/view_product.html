@@ -9,39 +9,39 @@
         </div> -->
         <div class="col-12 col-md-6 my-auto text-center">
             <h1>
-                Welcome to Cowley Pottery
+                {{product.name}}
             </h1>
-            <p>
+            <!-- <p>
                 Welcome to Cowley Pottery. In the heart of Devon, Helen crafts by hand all pieces from scratch in her
                 tiny little studio barely big enough for one person. If you'd like to see recent creations please visit
                 the shop. You can also find out more about Helen's journey and craft on the About page.
                 <br>
                 Feel free to get in contact about any pieces you want but are unavailable and I'll get back to you.
-            </p>
+            </p> -->
 
         </div>
     </div>
     <div class="row h-100 justify-content-center px-2">
         
-        {% for product_category in product_categories %}
 
         <div class="col-12 col-sm-6 col-md-4 col-xxl-3 pt-2 pb-2">
             <div class="card text-bg-dark  ratio-4x3">
-                <img class="img-thumbnail shop-tile rounded-3" src="/media/{{product_category.product.image }}" alt="{{product_category.product.name}} image">
-                <div class="tile-overlay">
-                    <div class="tile-title p-2">
-                        <a href="{% url 'view_product' product_category.product.id %}">
-                            <h6>{{product_category.product.name}}</h6>
-                        </a>
-                    </div>
-                </div>
+                <img class="img-thumbnail shop-tile rounded-3" src="/media/{{product.image }}" alt="{{product.name}} image">
             </div>
 
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-xxl-3 pt-2 pb-2">
+            <p>
+                {{product.description}}
+            </p>
+            <p>
+                £{{product.price}}
+            </p>
         </div>
 
 
 
-        {% endfor %}
+
 
     </div>
 </div>
