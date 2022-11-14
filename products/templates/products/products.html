@@ -21,6 +21,33 @@
 
         </div>
     </div>
+    <div class="row justify-content-center pt-2">
+        <div class="col-5 col-md-3 col-xl-1 category-icons text-center m-1 px-0 py-1">
+            <a href="{% url 'all_products' %}?category=new">New
+            </a>
+        </div>
+        <div class="col-5 col-md-3 col-xl-1 category-icons text-center m-1 px-0 py-1">
+            <a href="{% url 'all_products' %}">All items
+            </a>
+        </div>
+        <div class="col-5 col-md-3 col-xl-1 category-icons text-center m-1 px-0 py-1">
+            <a href="{% url 'all_products' %}?category=kitchenware">Kitchenware
+            </a>
+        </div>
+        <div class="col-5 col-md-3 col-xl-1 category-icons text-center m-1 px-0 py-1">
+            <a href="{% url 'all_products' %}?category=seasonal">Seasonal
+            </a>
+        </div>
+        <div class="col-5 col-md-3 col-xl-1 category-icons text-center m-1 px-0 py-1">
+            <a href="{% url 'all_products' %}?category=special">Special
+            </a>
+        </div>
+        <div class="col-5 col-md-3 col-xl-1 category-icons text-center m-1 px-0 py-1">
+            <a href="{% url 'all_products' %}?category=decorative">Decorative
+            </a>
+        </div>
+             
+    </div>
     <div class="row h-100 justify-content-center px-2">
         
         {% for product_category in product_categories %}
