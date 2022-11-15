@@ -7,7 +7,7 @@ def bag_contents(request):
     total = 0
     product_count = 0
 
-    if total < settings.FREE_DELIVERY_THRESHOLD and total != 0:
+    if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = settings.STANDARD_DELIVERY_COST
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
     else:
