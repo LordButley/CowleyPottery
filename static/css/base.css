@@ -124,10 +124,10 @@ footer li {
 }
 
 .category-icons a{
-
     text-decoration: none;
     color:black;
 }
+
 .category-icons a:hover{
     color:#0d6efd;
 }
@@ -139,3 +139,12 @@ footer li {
     height:2px;
     width:100%;
 }
+
+/* Plus/Minus buttons  */
+
+/* .plus-minus{
+    border-radius: 50%;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+} */
