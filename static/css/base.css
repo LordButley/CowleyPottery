@@ -12,7 +12,8 @@ h1, h2 {
     font-family: "Chelsea Market", sans-serif;
 }
 
-p {
+p,
+td {
     font-family: "Varta", sans-serif;
     font-weight: bold;
 }
@@ -129,4 +130,12 @@ footer li {
 }
 .category-icons a:hover{
     color:#0d6efd;
+}
+
+/* Table style */
+
+.table-line-break{
+    background-color: #fff;
+    height:2px;
+    width:100%;
 }
