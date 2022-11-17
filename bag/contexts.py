@@ -10,7 +10,7 @@ def bag_contents(request):
     product_count = 0
     bag = request.session.get('bag', {})
     # stock_check_objects = Product.objects.all()
-    # stock_check = {}
+    stock_check = {}
     # for item in stock_check_objects:
     #     stock_check.update({item.id: item.stock})
 
@@ -19,12 +19,13 @@ def bag_contents(request):
         # stock_check[int(product_id)] = stock_check[int(product_id)] - quantity
         total += quantity * product.price
         stock_left = product.stock - quantity
+        stock_check.update({int(product_id): stock_left})
         product_count += quantity
         bag_items.append({
             'product_id': product_id,
             'quantity': quantity,
             'product': product,
-            'stock_left': stock_left,
+            'stock_check': stock_check,
         })
 
 
@@ -44,7 +45,7 @@ def bag_contents(request):
         'delivery': delivery,
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
-        # 'stock_check': stock_check,
+        'stock_check': stock_check,
         'grand_total': grand_total,
     }
 

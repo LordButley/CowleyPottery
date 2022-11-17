@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load product_tools %}
 
 {% block content %}
 <div class="container-fluid h-100">
@@ -60,8 +61,8 @@
                                         </span>
                                     </button>
                                 </div>
-                                <p id="stock_qty_{{product.id}}" class="d-none">
-                                    {{product.stock}}
+                                <p id="stock_qty_{{product.id}}">
+                                        {{stock_check | stock_left:product}}
                                 </p>
                             </div>
                         </div>
