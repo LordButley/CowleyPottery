@@ -8,4 +8,3 @@ def stock_left(stock_dict, product):
         return stock_dict[product.id]
     else:
         return product.stock
-        
