@@ -35,11 +35,43 @@
                             <p class="my-0">£{{ item.product.price }}</p>
                         </td>
                         <td class="py-3 w-25">
-                            <form class="form update-form" method="POST" action="">
+
+                            <!-- <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.product_id %}">
                                 {% csrf_token %}
                                 <div class="form-group">
                                     <div class="input-group">
-                                
+                                        <div class="input-group-prepend">
+                                            <button class="decrement-qty btn btn-sm btn-black rounded-0" 
+                                                data-item_id="{{ item.product_id }}" id="decrement-qty_{{ item.product_id }}">
+                                                <span>
+                                                    <i class="fas fa-minus fa-sm"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <input class="form-control form-control-sm qty_input" type="number"
+                                            name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                                            data-item_id="{{ item.product_id }}"
+                                            id="id_qty_{{ item.product_id }}">
+                                        <div class="input-group-append">
+                                            <button class="increment-qty btn btn-sm btn-black rounded-0"
+                                                data-item_id="{{ item.product_id }}" id="increment-qty_{{ item.product_id }}">
+                                                <span>
+                                                    <i class="fas fa-plus fa-sm"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form> -->
+
+                            <!-- <form class="form update-form_{{item.product.id}}" method="POST" action="{% url 'adjust_bag' item.product.id  %}"> -->
+                            <form class="form update-form" method="POST" action="javascript:alert( 'success!' );"> 
+
+                                {% csrf_token %} 
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        {{item.product.id}}
+                                        {{item.product_id}}
                                         <div class="input-group-prepend">
                                             <button class="decrement-qty btn btn-black" 
                                                 data-item_id="{{ item.product.id }}" id="decrement-qty_{{ item.product.id }}">
@@ -60,12 +92,14 @@
                                                 </span>
                                             </button>
                                         </div>
-                                        <p id="stock_qty_{{item.product.id}}" class="d-none">
-                                            {{stock_check | stock_left:item.product}}
-                                        </p>
+                                        
                                     </div>
                                 </div>
+                                <p id="stock_qty_{{item.product.id}}" class="d-none"> -->
+                                    {{stock_check | stock_left:item.product}}
+                                </p>
                             </form>
+                            
                             <div class= "d-flex justify-content-around">
                             <a class="update-link text-info"><small>Update</small></a>
                             <a class="remove-item text-danger" id="remove_{{ item.product.id }}"><small>Remove</small></a>
@@ -136,16 +170,23 @@
     $('.update-link').click(function(e) {
         console.log("woopsie");
         var form = $(this).prev('.update-form');
+        // var form = $(this).prev();
+        // var form = $('.update-form');
         console.log(form);
         form.submit();
     })
+
+    // $('.update-link').click(function(e) {
+    //     var form = $(this).prev('.update-form');
+    //     form.submit();
+    // })
 
     // Remove item and reload on click
     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         // var size = $(this).data('size');
-        var url = `/bag/remove/${itemId}`;
+        var url = `/bag/remove/${itemId}/`;
         // var data = {'csrfmiddlewaretoken': csrfToken, 'size': size};
         var data = {'csrfmiddlewaretoken': csrfToken}
         $.post(url, data)
