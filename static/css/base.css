@@ -148,3 +148,43 @@ footer li {
     width: 25px;
     height: 25px;
 } */
+
+/* .message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+} */
+
+.message-container {
+    position: fixed;
+    top: 4rem;
+    right: 3.5vw;
+    z-index: 99999;
+}
+
+.toast {
+    overflow: visible;
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 5px !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .85) !important;
+    padding: 0.25rem;
+}
+
+.toast-capper {
+    height: 2px;
+    margin: 0 0.5rem;
+}
+
+.img-toast {
+    width: auto;
+}

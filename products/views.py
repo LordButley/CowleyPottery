@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Product, Product_Category, Category
 from datetime import datetime, timedelta
+from django.contrib import messages
+
 
 # Create your views here.
 
@@ -40,8 +42,8 @@ def all_products(request):
 
 def view_product(request, product_id):
     """ A view to return the all products, including sorting queries"""
-
-    product = get_object_or_404(Product, pk=product_id)
+    print(product_id)
+    product = get_object_or_404(Product, pk=int(product_id))
  
     context = {
         'product': product,
