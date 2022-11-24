@@ -1,108 +1,304 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Cowley Pottery: 
 
-Welcome LordButley,
+This website is being designed for use by Cowley Pottery, the pottery shop of Helen Taylor.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This website is unfinished, unpolished and undeployed! I became (delightfully) employed at the crunch time of this project and my priorities had to shift. I'm aware that this is not enough to pass but I would be really grateful for some feedback on the direction that this is going in, as the base layout, colour scheme and functionality will all be used in the final deployment. Thank you very much for your time :)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+One obstacle I had not anticipated when facing a sprint to the finish was how much the customer would affect the speed. The "customer" is my mother and I'm still waiting on information and images she wants in her site and over the next month I will be taking these matters into my own hands when I return home for Christmas :) 
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+This website has been created as the Fifth Milestone project for Code Institute's Full Stack Software Development Diploma. It was built using a Full-Stack Toolkit, with the addition of E-commerce Applications such as Stripe. GitPod was used for writing the code for this website, as well as committing and pushing to GitHub. GitHub was then used to store the project after it had been pushed from GitPod. Once all the code had been written, Heroku was then used to deploy the website. 
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+### View the live website [here]()
+Website not yet live *
+![Live Website]()
 
-Another blue button should appear to click: _Open Browser_.
+***
+## Table of content: 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+***
+ 
+## Site Goals:
 
-A blue button should appear to click: _Make Public_,
+The goals for this site are as follows:
+* Allow users to view products
+* Allow users to add products to a basket
+* Allow users to update or delete products from basket
+* Allow users to make payments using Stripe
+* Allow users to create a user profile
+* Allow users to contact the store with any queries 
+* Allow user to request commissions 
+* Allow users to sign up for a stock newsletter
+* Allow authorised users to leave product reviews
+* Allow store owner to collect user data to complete orders
+* Allow store owners to approve user reviews 
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## UX:
 
-To log into the Heroku toolbelt CLI:
+### User stories: 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The user stories are on the projects board and I will copy them over to here at a later date. I have been using Excel to maintain the Moscow working method as I find that GitHub is clunky for a 1 man team. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Development Planes:
+To create a website that is comprehensive and informative for a user, as a developer you need to look at all aspects of the website and how someone who visits your website will use it. You have to consider all the user stories that have been outlined in the above sections.  
 
-------
+## Strategy
+The strategy principle looks at user needs, as well as product/service objectives. This website's target audience was broken down into three categories:
+### Roles: 
+* Admin
+* New User
+* Existing User  
 
-## Release History
+### Demographic:
+* Aged between 18 to 100
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### Lifestyle:
+* Collectors
+* Home Decorators
+* Hobbyists
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+#### The website needs to allow users to:  
+* View products by price, category or rating
+* Add products to a basket
+* Edit product quantities and delete products straight from the basket
+* Make secure payments for their products via credit card
+* Create a user profile
+* Contact the store with enquiries
+* Sign up for a newsletter
+* Leave reviews for products they bought
+* Visit the store's social media accounts straight from the site 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+#### The website needs to allow the store owner to:  
+* Add, edit and delete products straight from the frontend site 
+* Collect information from order forms
+* Collect email addresses for a monthly marketing newsletter
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Scope:  
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+With the structure in place, it was then time to move onto the scope plane. This was all about developing website requirements based on the goals set out in the strategy plane. These requirements are broken down into two categories. 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Content Requirements:
+1. The user will be looking for:
+      * A list of products that can be purchased 
+      * Information about the store owner
+      * Links to the store's social media accounts
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Functionality Requirements:
+1. The user will be able to:
+      * Learn more about the store and the owner
+      * Browse all the store's products
+      * Add products to a basket
+      * Edit their basket
+      * Complete orders using Stripe
+      * Create a user account
+      * Update information on a user account
+      * Contact the store with enquires 
+      * Sign up for a newsletter
+      * Request a specific commision
+      * Learn more about the store and the owner
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+***
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Skeleton:
+Wireframes were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/).  
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Surface:
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+***
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Colour: 
+The colours used for this project were white and a grey that looks just like unfired clay! Not only in this in keeping with the product, it matches up with the general approach accross hobbyist websites which generally follow a light coloured clean and simple approach.
 
-------
 
-## FAQ about the uptime script
+### Font:
+Fonts used for this site were Chelsea Market and Varta, both of which have been imported from [Google Fonts](https://fonts.google.com/)
 
-**Why have you added this script?**
+Note the "Logo" is currently shown in Rampart One but this is a place holder as the customer is looking to get a graphic designer to create an actual logo.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Images:
+The images for this project are all genuine pieces from the story either taken by me or by the customer.
 
-**How will this affect me?**
+Please note the landing page is also placeholder as this will be replaced by a nice, high resolution image or better (if I can find the equipment necessary) a 10 second repeating video of potters wheel rotating with clay on top from a vertical perspective.
+ 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+***
+ 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Features:
+There are several features on this site to help users get the most out of their visit to the site.  
 
-**So….?**
+### General:
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+&nbsp;
 
-**Can I opt out?**
+### Landing page:
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+&nbsp;
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Home page:
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+&nbsp;
 
----
+### Shop page:  
 
-Happy coding!
+Here the filtering of products is done through tiles rather than outdated dropdowns.
+
+There is a new filter which returns products that have only been added the database within a certain timeframe.
+
+Note that due to the nature of this website, there is little need for a search bar as at any given time there will only be a handful of items on sale. 
+
+There has been extra functionality added to only be able to buy what is it stock.
+
+Note also when an item runs out of stock, it will remain on the website with a banner (to be added) until it is taken down intentionally. This is to give prospective buyers an idea for commissions as opposed to thinking they cannot purchase
+
+&nbsp;
+
+### View Product page:  
+
+&nbsp;
+
+### Basket: 
+
+&nbsp;
+
+### Checkout:
+
+
+&nbsp;
+
+### About us page:
+
+&nbsp;
+
+### Commisions page:
+
+&nbsp;
+
+### Sign up page:
+
+
+&nbsp;
+
+### Login page:
+
+
+&nbsp;
+
+### My Profle page:
+ 
+
+&nbsp;
+
+### Logout page:
+
+&nbsp;
+
+### 404 error page:
+
+
+
+
+## Future Features:
+
+
+***
+
+
+***
+
+## Bugs:
+### jQuery - Toasts:
+Issue 
+* Fix
+
+&nbsp;
+
+
+***
+
+
+## Technologies Used:
+For this project, the following technologies were used.  
+
+### Languages:
+* HTML
+* CSS
+* Python
+* Javascript
+ 
+
+### Frameworks, Libraries, Programs & Applications Used:
+* Django
+* PostgreSQL
+* Bootstrap
+* AWS
+
+#### Google Font
+* Google Font was used to import the chosen fonts for this project.
+
+#### GitPod
+* GitPod was used for writing all the code for this project. It was also used to commit and push to GitHub.  
+
+#### GitHub 
+* GitHub was used to store this project.
+
+#### Heroku
+* Heroku was used to deploy the project.
+
+#### Amazon Web Services
+* AWS was used to store some of the images used in this project
+
+#### Balsamiq 
+* Balsamiq was used to draw initial Wireframes for this project.
+
+#### Google Development Tools
+* Google Dev Tools was used to edit code and check responsiveness before making the changes permanent.
+
+*** 
+
+## Reports and Credits:
+
+### Database Schema:
+
+### Marketing:
+Marketting has been extensively done through Instagram. There has been additional marketting through Facebook marketplace. And associate marketing through events. A thorough summary to be written here.
+
+## Testing:
+
+
+### Validation:
+
+* HTML:
+
+* CSS:
+
+* JavaScript: 
+
+* Python: 
+
+***
+
+### Accessibility:
+Lighthouse Reports
+
+***
+
+### Deployment and Development:
+
+***
+
+### Credits:
+* The initial setup of the Django project was done following the Code Institutes walkthrough project.  
+
+
+### Acknowledgements:
+
+
+*** 
