@@ -13,8 +13,10 @@ import stripe
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
-
+    print("what the hell is going on")
+    print(request.method)
     if request.method == 'POST':
+        print("posted")
         bag = request.session.get('bag', {})
 
         form_data = {
@@ -70,8 +72,6 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-
-        print(intent)
 
         order_form = OrderForm()
 
