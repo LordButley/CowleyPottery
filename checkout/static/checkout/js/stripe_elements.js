@@ -6,7 +6,7 @@
 */
 
 var stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
-var clientSecretJoa = $('#id_client_secret').text().slice(1, -1);
+var clientSecret = $('#id_client_secret').text().slice(1, -1);
 var stripe = Stripe(stripePublicKey);
 var elements = stripe.elements();
 var style = {
@@ -67,6 +67,7 @@ form.addEventListener('submit', function(ev) {
             $('#submit-button').attr('disabled', false);
         } else {
             if (result.paymentIntent.status === 'succeeded') {
+                console.log("form submitted");
                 form.submit();
             }
         }
