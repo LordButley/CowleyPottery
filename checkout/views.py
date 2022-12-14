@@ -9,6 +9,7 @@ from products.models import Product
 from bag.contexts import bag_contents
 
 import stripe
+import json
 
 @require_POST
 def cache_checkout_data(request):
@@ -50,7 +51,11 @@ def checkout(request):
         order_form = OrderForm(form_data)
 
         if order_form.is_valid():
-            order = order_form.save()
+            order = order_form.save(commit=False)
+            pid = request.POST.get('client_secret').split('_secret')[0]
+            order.stripe_pid = pid
+            order.original_bag = json.dump(bag)
+            order.save()
             for product_id, product_data in bag.items():
                 try:
                     product = Product.objects.get(id=product_id)
