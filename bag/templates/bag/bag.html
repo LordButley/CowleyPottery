@@ -26,7 +26,9 @@
                     {% for item in bag_items %}
                     <tr class="text-center">
                         <td class="p-3 w-25 d-none d-sm-table-cell">
+                            {% if item.product.image %}
                             <img class="img-fluid img-thumbnail shop-tile rounded" src="{{ item.product.image.url }}">
+                            {% endif %}
                         </td>
                         <td class="py-3">
                             <p class="my-0">{{ item.product.name }}</p>
