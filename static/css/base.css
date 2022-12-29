@@ -12,6 +12,11 @@ h1, h2 {
     font-family: "Chelsea Market", sans-serif;
 }
 
+h2 > a {
+    text-decoration: none;
+    color:black;
+}
+
 p,
 td {
     font-family: "Varta", sans-serif;
