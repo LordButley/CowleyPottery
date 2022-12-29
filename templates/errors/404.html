@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid h-100 page-container">
+    <div class="row justify-content-center bg-white">
+        <div class="col-12 col-md-6 my-auto text-center">
+            <h1>
+                404
+            </h1>
+            <p>
+                You've spun off the pottery wheel.
+                <br>
+                Click <a href="{% url 'home' %}">here</a> to go home
+            </p>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
