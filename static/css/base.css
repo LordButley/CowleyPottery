@@ -10,6 +10,7 @@ body {
 
 h1, h2 {
     font-family: "Chelsea Market", sans-serif;
+    padding-top: 2px;
 }
 
 h2 > a {
@@ -51,7 +52,7 @@ td {
 }
 
 .page-container{
-    min-height: 90vh;
+    min-height: 80vh;
 }
 
 /* .tile-image-container{
@@ -118,7 +119,7 @@ footer li {
 
 /* Change to min width */
 
-@media screen and (min-width: 770px){
+@media screen and (min-width: 768px){
     .tile-image-container{
         height:60%;
     }
