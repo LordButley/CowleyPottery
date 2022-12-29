@@ -58,9 +58,9 @@ td {
     height:60%;
 } */
 
-.tile-text-container{
+/* .tile-text-container{
     height:40%;
-}
+} */
 
 .tile-image{
     /* max-height: 286px; */
@@ -211,6 +211,12 @@ footer li {
 .img-toast {
     width: auto;
 }
+
+.footer-container {
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
