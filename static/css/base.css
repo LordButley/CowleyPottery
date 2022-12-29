@@ -45,9 +45,21 @@ td {
     font-size: 2rem;
 }
 
-.tile-image{
-    max-height: 286px;
+.page-container{
+    min-height: 80vh;
+}
+
+/* .tile-image-container{
     height:60%;
+} */
+
+.tile-text-container{
+    height:40%;
+}
+
+.tile-image{
+    /* max-height: 286px; */
+    height:100%;
     min-width: 100%;
     overflow:hidden;
     object-fit: cover;
@@ -101,11 +113,17 @@ footer li {
 
 /* Change to min width */
 
-@media screen and (max-width: 420px){
+@media screen and (min-width: 770px){
+    .tile-image-container{
+        height:60%;
+    }
+}
+
+/* @media screen and (max-width: 420px){
     .tile-image{
         height:50%;
     }
-}
+} */
 
 /* Category icons */
 
