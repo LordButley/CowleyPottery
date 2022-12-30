@@ -21,7 +21,11 @@
     </div>
     <div class="row justify-content-around">
         <div class="col-12 col-md-6 col-xxl-4">
-            <div class="card text-bg-dark">
+            <div class="col-5 col-md-3 col-xl-1 category-icons text-center mx-1 px-0 py-3 mt-2">
+                <a href="{% url 'all_products' %}?category=new">New in stock
+                </a>
+            </div>
+            <!-- <div class="card text-bg-dark">
                 <img class="img-thumbnail" src="/media/all.jpg" class="card-img" alt="Lots of different pottery">
                 <div class="tile-overlay">
                     <div class="tile-title p-2">
@@ -31,10 +35,16 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
         </div>
+    </div>
+    <div class="row justify-content-around">
         <div class="col-12 col-md-6 col-xxl-4">
-            <div class="card text-bg-dark">
+            <div class="col-5 col-md-3 col-xl-1 category-icons text-center mx-1 px-0 py-3 mt-2">
+                <a href="{% url 'all_products' %}">All products
+                </a>
+            </div>
+            <!-- <div class="card text-bg-dark">
                 <img class="img-thumbnail" src="/media/all.jpg" class="card-img" alt="Lots of different pottery">
                 <div class="tile-overlay">
                     <div class="tile-title p-2">
@@ -44,7 +54,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="row justify-content-center px-2">
