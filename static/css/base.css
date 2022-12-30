@@ -238,3 +238,14 @@ footer li {
     /* width:600px; */
     width:100%;
 }
+
+.about-text {
+    margin:auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.page-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
