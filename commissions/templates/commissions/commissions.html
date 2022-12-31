@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid h-100">
+    <div class="row justify-content-center bg-white">
+        <div class="col-12 col-md-6 my-auto text-center page-title">
+            <h1>
+                Commissions
+            </h1>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <p class="text-muted">Default Delivery Information</p>
+        <form class="mt-3" action="{% url 'commissions' %}" method="POST">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button class="btn btn-black rounded-0 text-uppercase float-right">Send request</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
