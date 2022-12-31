@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid h-100">
+    <div class="row justify-content-center bg-white">
+        <div class="col-12 col-md-6 my-auto text-center page-title">
+            <h1>
+                Commissions
+            </h1>
+        </div>
+    </div>
+</div>
+
+<table class="table table-secondary table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Detail</th>
+            <th scope="col">Responded</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        {% for commission in commission_list %}
+        <tr>
+            <td>{{commission.name}}</td>
+            <td>{{ commission.email }}</td>
+            <td>{{ commission.details }}</td>
+            <td>{{ commission.responded }}</td>
+        </tr>
+
+        {% endfor %}
+
+
+    </tbody>
+</table>
+
+{% endblock %}

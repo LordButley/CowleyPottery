@@ -7,6 +7,7 @@ class CommissionAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'email',
+        'responded',
     )
 
 admin.site.register(Commission, CommissionAdmin)

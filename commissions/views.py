@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse
+from .models import Commission
 from .forms import CommissionForm
 from django.contrib import messages
 
@@ -27,3 +28,15 @@ def commissions_form_view(request):
 def commissions_success(request):
     """ A view for the commissions success page """
     return render(request, "commissions/commissions_success.html")
+
+
+def commissions_list(request):
+    """ A view for the commissions list page """
+    
+    commissions = Commission.objects.all()
+
+    context = {
+        'commission_list':commissions,
+    }
+
+    return render(request, "commissions/commissions_list.html", context)
