@@ -9,6 +9,5 @@ class CommissionAdmin(admin.ModelAdmin):
         'email',
     )
 
-
 admin.site.register(Commission, CommissionAdmin)
 

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
 from .forms import CommissionForm
 from django.contrib import messages
 
@@ -13,13 +13,17 @@ def commissions_form_view(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Request sent successfully')
+            return redirect(reverse('commissions_success'))
         else:
             messages.error(request, 'Request failed. Please ensure the form has been filled in correctly')
     else:
         form = CommissionForm
 
     context = {
-        'form' : form,
+        'form': form,
     }
     return render(request, "commissions/commissions.html", context)
 
+def commissions_success(request):
+    """ A view for the commissions success page """
+    return render(request, "commissions/commissions_success.html")
