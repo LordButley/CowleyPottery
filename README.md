@@ -40,6 +40,11 @@ The goals for this site are as follows:
 ### User stories: 
 
 The user stories are on the projects board and I will copy them over to here at a later date. I have been using Excel to maintain the Moscow working method as I find that GitHub is clunky for a 1 man team. 
+#### Epics
+
+* Views and Navigation
+*
+
 
 ## Development Planes:
 To create a website that is comprehensive and informative for a user, as a developer you need to look at all aspects of the website and how someone who visits your website will use it. You have to consider all the user stories that have been outlined in the above sections.  
