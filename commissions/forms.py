@@ -5,7 +5,7 @@ from .models import Commission
 class CommissionForm(forms.ModelForm):
     class Meta:
         model = Commission
-        fields = '__all__'
+        exclude = ('responded',)
 
     def __init__(self, *args, **kwargs):
         """
