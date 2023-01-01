@@ -22,7 +22,7 @@
             <form class="mt-3" action="{% url 'commissions' %}" method="POST">
                 {% csrf_token %}
                 {{ form|crispy }}
-                <button class="btn btn-black rounded-0 text-uppercase float-right">Send request</button>
+                <button class="btn btn-black rounded-0 text-uppercase category-icons mt-2">Send request</button>
             </form>
         </div>
     </div>

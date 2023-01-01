@@ -4,7 +4,7 @@
 
 
 {% block content %}
-<div class="container-fluid h-100">
+<div class="container-fluid h-100 page-container">
     <div class="row text-center bg-white">
         <h1>Shopping Bag</h1>
     </div>
@@ -100,14 +100,12 @@
                     </tr>
                     <tr>
                         <td colspan="5" class="text-end fs-4">
-                            <span class="category-icons mx-2">
+                            <span class="btn btn-black rounded-0 text-uppercase category-icons mt-2">
                                 <a href="{% url 'shop' %}">
-                                    <span class="icon">
-                                        <i class="bi bi-arrow-return-left"></i> </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
                             </span>
-                            <span class="category-icons">
+                            <span class="btn btn-black rounded-0 text-uppercase category-icons mt-2">
                                 <a href="{% url 'checkout' %}">
                                     <span class="text-uppercase">Secure Checkout</span>
                                     <span class="icon">
@@ -122,11 +120,8 @@
             {% else %}
             <p class="text-center fs-4 mt-3">Your bag is empty.</p>
             <div class="text-end">
-                <span class="category-icons text-end">
+                <span class="btn btn-black rounded-0 text-uppercase category-icons mt-2">
                     <a href="{% url 'shop' %}">
-                        <span class="icon">
-                            <i class="bi bi-arrow-return-left"></i>
-                        </span>
                         <span class="text-uppercase">Keep Shopping</span>
                     </a>
                 </span>
