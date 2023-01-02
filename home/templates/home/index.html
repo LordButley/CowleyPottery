@@ -19,7 +19,6 @@
         </div>
     </div>
     <div class="row justify-content-center px-2 pb-5">
-        <h1>{{MEDIA_URL}}</h1>
         <div class="col-12 col-md-4 col-xxl-3 pt-2">
             <div class="tile-image-container">
                 <a href="{% url 'about' %}">
@@ -41,7 +40,7 @@
         <div class="col-12 col-md-4 col-xxl-3 pt-2">
             <div class="tile-image-container">
                 <a href="{% url 'shop' %}">
-                    <img class="img-fluid rounded-3 tile-image img-thumbnail" src="/media/bluemugfade.jpg" alt="Pottery examples">
+                    <img class="img-fluid rounded-3 tile-image img-thumbnail" src="{{ MEDIA_URL }}bluemugfade.jpg" alt="Pottery examples">
                 </a>
             </div>
             <div class="tile-text-container px-2 pt-2">
@@ -56,7 +55,7 @@
         <div class="col-12 col-md-4 col-xxl-3 pt-2">
             <div class="tile-image-container">
                 <a href="{% url 'commissions' %}">
-                <img class="img-fluid rounded-3 tile-image image-top-align img-thumbnail" src="/media/dwarvesfire.JPG"
+                <img class="img-fluid rounded-3 tile-image image-top-align img-thumbnail" src="{{ MEDIA_URL }}dwarvesfire.JPG"
                     alt="Pottery examples">
                 </a>
             </div>
