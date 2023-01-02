@@ -13,7 +13,7 @@ The project was designed with design thinking principles at the core and the cus
 ![Live Website](media/responsive.png)
 
 ***
-## Table of content: 
+## Table of contents: 
 
 ***
  
@@ -33,15 +33,27 @@ The goals for this site are as follows:
 * Allow store owners to approve user reviews 
 
 
+## Agile working and Customer centric design
+
+I sat down with the customer and discussed the website and their wants and needs. I had conducted some research into the pottery and ceramic space online and presented a number of different websites to give an idea of how the website could look but also an idea of features that could be implemented. We started with a broad discussion about the website and core goals from which I created 5 epics that split into smaller user stories.
+
+There were then placed onto a Kanban board and worked towards at first in week long sprints but then as my work life conditions changed, they were worked towards whenever possible. However this was still done using the user stories.
+
+An initial mock up was created using Balsamiq from these user stories.
+
+Every Sunday, I would speak again with the customer about the progress, the parts that have been implemented and discuss the next user stories. In these meetings I assigned the MoSCoW priorities for the next period of time.
+
+## Business Model
+
 ## UX:
 
 ### Epics and User stories: 
 
-The user stories are on the projects board and I will copy them over to here at a later date. I have been using Excel to maintain the Moscow working method as I find that GitHub is clunky for a 1 man team. 
+The user stories can be found on the projects board. 
 
 #### Epic 1 - Views and Navigation
 
-Website requires web pages containing information regarding the business and the items that are for sale. It also is necessary to have the means in which to traverse the website. User stories that address this Epic are:
+Website requires web pages containing information regarding the business and the items that are for sale. It also is necessary to have the means in which to traverse the website. User stories that address this 
 
 *As a customer I can view a list of products so that I can identify what products are available and view their images.
 *As a customer I can view individual products so that I can learn more about the item such as price, description, and quantity available.
@@ -89,6 +101,7 @@ The admin should be able to add new products to the store as well as edit others
 *As a shop owner I can edit products through the admin site so that I can change item prices, images and descriptions.
 
 ## Development Planes:
+
 To create a website that is comprehensive and informative for a user, as a developer you need to look at all aspects of the website and how someone who visits your website will use it. You have to consider all the user stories that have been outlined in the above sections.  
 
 ## Strategy
@@ -102,6 +115,7 @@ The strategy principle looks at user needs, as well as product/service objective
 * Existing User  
 
 ### Demographic:
+
 * Aged between 18 to 100
 
 #### Lifestyle:
@@ -111,22 +125,21 @@ The strategy principle looks at user needs, as well as product/service objective
 * Hobbyists
 
 
-#### The website needs to allow users to:  
-* View products by price, category or rating
+#### The website needs to allow users to: 
+
+* View products by category
 * Add products to a basket
 * Edit product quantities and delete products straight from the basket
 * Make secure payments for their products via credit card
 * Create a user profile
-* Contact the store with enquiries
+* Contact the store with enquiries for commissions
 * Sign up for a newsletter
-* Leave reviews for products they bought
 * Visit the store's social media accounts straight from the site 
 
 #### The website needs to allow the store owner to:  
 * Add, edit and delete products straight from the frontend site 
 * Collect information from order forms
 * Collect email addresses for a monthly marketing newsletter
-
 
 ## Scope:  
 
@@ -155,7 +168,12 @@ With the structure in place, it was then time to move onto the scope plane. This
 ***
 
 ## Skeleton:
-Wireframes were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/).  
+Wireframes were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/). These mock ups were created for Mobile first and then for the desktop view.
+
+Over the course of the project, the website took on a much different appearance but these served as a good initial framework.
+
+![Mobile Wireframes](media/responsive.png)
+![Desktop Wireframess](media/responsive.png)
 
 ## Surface:
 
@@ -172,7 +190,7 @@ Fonts used for this site were Chelsea Market and Varta, both of which have been 
 Note the "Logo" is currently shown in Rampart One but this is a place holder as the customer is looking to get a graphic designer to create an actual logo.
 
 ### Images:
-The images for this project are all genuine pieces from the story either taken by me or by the customer.
+The images for this project are all genuine pieces from the store either taken by me or by the customer.
 
 Please note the landing page is also placeholder as this will be replaced by a nice, high resolution image or better (if I can find the equipment necessary) a 10 second repeating video of potters wheel rotating with clay on top from a vertical perspective.
  
@@ -319,7 +337,7 @@ For this project, the following technologies were used.
 ### Database Schema:
 
 ### Marketing:
-Marketting has been extensively done through Instagram. There has been additional marketting through Facebook marketplace. And associate marketing through events. A thorough summary to be written here.
+Marketing has been extensively done through Instagram. There has been additional marketting through Facebook marketplace. And associate marketing through events. A thorough summary to be written here.
 
 ## Testing:
 
