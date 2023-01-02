@@ -10,7 +10,7 @@ The project was designed with design thinking principles at the core and the cus
 
 ### View the live website [here](https://cowley-pottery.herokuapp.com/)
 
-![Live Website](media/responsive.png)
+![Live Website](media/readme/responsive.png)
 
 ***
 ## Table of contents: 
@@ -184,8 +184,8 @@ Wireframes were created to set out the initial appearance of the website while a
 
 Over the course of the project, the website took on a much different appearance but these served as a good initial framework.
 
-![Mobile Wireframes](media/PhoneWireframes.png)
-![Desktop Wireframess](media/DesktopWireframes.png)
+![Mobile Wireframes](media/readme/PhoneWireframes.png)
+![Desktop Wireframes](media/readme/DesktopWireframes.png)
 
 ## Surface:
 
@@ -205,15 +205,25 @@ The images for this project are all genuine pieces from the store either taken b
 ## Features:
 There are several features on this site to help users get the most out of their visit to the site.  
 
+### Landing page:
+
+When users first travel to the site, they are met with a display of Cowley Pottery. The splash page navigation contains links to the Cowley Pottery Instagram and Facebook. The welcome paragraph is only visible on larger screens.
+
+![Navbar Desktop](media/readme/landing.png)
+![Navbar Desktop](media/readme/navbarmobilesplash.png)
+
 ### Navigation:
 
-&nbsp;
+The site can be navigated by an always in view navbar. The navbar contains the links for every section of the site. On smaller screens the navbar options become a burger icon drop down.
+
+![Navbar Desktop](media/readme/navbardesktop.png)
+![Navbar Mobile](media/readme/navbarmobile.png)
 
 ### Footer:
 
-### Landing page:
+In the footer the shop name and it's address can be found alongside a newsletter subscription from 3rd party Mailchimp.
 
-&nbsp;
+![Footer](media/readme/footer.png)
 
 ### Home page:
 
