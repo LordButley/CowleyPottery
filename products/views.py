@@ -26,13 +26,11 @@ def all_products(request):
     """ A view to return the all products, including sorting queries"""
 
     product_categories = Product_Category.objects.all()
-    # products = Product.objects.all()
 
     if request.GET:
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             if 'new' in categories:
-                # product_categories = "Check"
                 product_categories = product_categories.exclude(product__date_added__lt = (datetime.today() - timedelta(weeks=4)))
             else:
                 product_categories = product_categories.filter(category__name__in=categories)
@@ -67,23 +65,15 @@ def add_product(request):
         if form.is_valid():
             category_id = request.POST.get('readable_name')
             category = Category.objects.get(id=category_id)
-
-            # get your category here first and define it as category
             form.save()
             print(form)
             Product_Category.objects.create(category=category, product=form.instance)
-            # directly create a Product_Category object here
-            # something along the lines of Product_Category.objects.create(category=category, product=form)
             messages.success(request, 'Successfully added product')
-
             print('readable_name')
             print(type(category))
-            # product_category = Product_CategoryForm()
-            # product_category.category = category
         else:
             messages.error(request, 'Failed to add product. Please ensure the form is valid')
             return redirect(reverse('add_product'))
-    # else:
     form = ProductForm()
     category_form = CategoryForm()
     template = 'products/add_product.html'

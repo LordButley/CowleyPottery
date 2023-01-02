@@ -45,6 +45,18 @@ Every Sunday, I would speak again with the customer about the progress, the part
 
 ## Business Model
 
+The business model was determined at a very early stage. It follows that of a premium and bespoke crafts shop. Each item on the shop takes many days to create and each item is different from the next. 
+
+The shop has been designed to take into account the nature of this shop and that only 20-30 different types of product will ever be on sale at the same time.
+
+The majority of business for this company will come through in person sales and boutique fairs and markets and this is where the majority of the marketting will take place. However to maintain contact with these types of people and to encourage repeat purchases, business cards have been given out which with details of the Facebook and Instagram pages. This will be changed to this website once live.
+
+Facebook and Instagram is where new custom will be generated outside of in person sales. It gives the owner of the story a way of showing her craft and it's journey from a ball of clay to the final designs. It also gives additional weight to the bespoke and hand made nature of the work. 
+
+Commissions is the final angle in which revenue could be generated and the website shows an early version of the process that will be developed into a more expansive version going forward.
+
+The future possibility of giving classes and therefore needing advertisement and selling has been pencilled in for next year.
+
 ## UX:
 
 ### Epics and User stories: 
@@ -172,17 +184,15 @@ Wireframes were created to set out the initial appearance of the website while a
 
 Over the course of the project, the website took on a much different appearance but these served as a good initial framework.
 
-![Mobile Wireframes](media/responsive.png)
-![Desktop Wireframess](media/responsive.png)
+![Mobile Wireframes](media/PhoneWireframes.png)
+![Desktop Wireframess](media/DesktopWireframes.png)
 
 ## Surface:
 
 ***
 
-
 ### Colour: 
 The colours used for this project were white and a grey that looks just like unfired clay! Not only in this in keeping with the product, it matches up with the general approach accross hobbyist websites which generally follow a light coloured clean and simple approach.
-
 
 ### Font:
 Fonts used for this site were Chelsea Market and Varta, both of which have been imported from [Google Fonts](https://fonts.google.com/)
@@ -190,21 +200,16 @@ Fonts used for this site were Chelsea Market and Varta, both of which have been 
 Note the "Logo" is currently shown in Rampart One but this is a place holder as the customer is looking to get a graphic designer to create an actual logo.
 
 ### Images:
-The images for this project are all genuine pieces from the store either taken by me or by the customer.
-
-Please note the landing page is also placeholder as this will be replaced by a nice, high resolution image or better (if I can find the equipment necessary) a 10 second repeating video of potters wheel rotating with clay on top from a vertical perspective.
- 
-
-***
- 
-
+The images for this project are all genuine pieces from the store either taken by me or by the customer. Some are even still available if you would like to purchase!
 
 ## Features:
 There are several features on this site to help users get the most out of their visit to the site.  
 
-### General:
+### Navigation:
 
 &nbsp;
+
+### Footer:
 
 ### Landing page:
 
@@ -223,7 +228,7 @@ There is a new filter which returns products that have only been added the datab
 
 Note that due to the nature of this website, there is little need for a search bar as at any given time there will only be a handful of items on sale. 
 
-There has been extra functionality added to only be able to buy what is it stock.
+There has been extra functionality added to only be able to buy what is in stock.
 
 Note also when an item runs out of stock, it will remain on the website with a banner (to be added) until it is taken down intentionally. This is to give prospective buyers an idea for commissions as opposed to thinking they cannot purchase
 
@@ -281,6 +286,10 @@ Note also when an item runs out of stock, it will remain on the website with a b
 
 
 ***
+## Testing
+
+Testing iterations, bugs, fixes and unresolved can be found here [Testing Document](TESTING.md)
+
 
 ## Bugs:
 ### jQuery - Toasts:
