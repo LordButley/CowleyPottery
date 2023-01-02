@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /accounts/
+Sitemap: https://cowley-pottery.herokuapp.com/sitemap.xml

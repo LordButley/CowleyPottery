@@ -63,7 +63,7 @@ td {
 }
 
 .shop-tile{
-    max-height: 286px;
+    /* max-height: 286px; */
     height:auto;
     min-width: 100%;
     overflow:hidden;

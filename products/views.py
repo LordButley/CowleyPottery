@@ -83,8 +83,8 @@ def add_product(request):
         else:
             messages.error(request, 'Failed to add product. Please ensure the form is valid')
             return redirect(reverse('add_product'))
-    else:
-        form = ProductForm()
+    # else:
+    form = ProductForm()
     category_form = CategoryForm()
     template = 'products/add_product.html'
     context = {
