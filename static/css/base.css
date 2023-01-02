@@ -55,16 +55,7 @@ td {
     min-height: 75vh;
 }
 
-/* .tile-image-container{
-    height:60%;
-} */
-
-/* .tile-text-container{
-    height:40%;
-} */
-
 .tile-image{
-    /* max-height: 286px; */
     height:100%;
     min-width: 100%;
     overflow:hidden;
@@ -98,7 +89,6 @@ td {
 .tile-title{
     vertical-align: middle;
     background-color: rgb(0, 0, 0, 0.4);
-    /* opacity: 0.8; */
 }
 
 .tile-title a{
@@ -132,26 +122,18 @@ footer li {
     }
 }
 
-/* @media screen and (max-width: 420px){
-    .tile-image{
-        height:50%;
-    }
-} */
-
 /* Category icons */
 
 .category-icons {
     width:auto;
     min-width: 7em;
     font-family: "Chelsea Market", sans-serif;
-    /* color: black; */
     font-size: large;
     background-color: #fff;
     border: 1px solid #dee2e6;
     border-radius: 0.25rem;
     height: auto;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-    /* display: block; */
 }
 
 .category-icons a{
@@ -170,30 +152,6 @@ footer li {
     height:2px;
     width:100%;
 }
-
-/* Plus/Minus buttons  */
-
-/* .plus-minus{
-    border-radius: 50%;
-    background-color: #fff;
-    width: 25px;
-    height: 25px;
-} */
-
-/* .message-container {
-    position: fixed;
-    top: 72px;
-    right: 15px;
-    z-index: 99999999999;
-}
-
-.custom-toast {
-    overflow: visible;
-}
-
-.toast-capper {
-    height: 2px;
-} */
 
 .message-container {
     position: fixed;
@@ -255,4 +213,8 @@ footer li {
 .page-title {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.blue-hover:hover {
+    color:#0d6efd !important;
 }
