@@ -2,14 +2,14 @@
 {% load static %}
 
 {% block content %}
-<div class="container-fluid h-100">
+<div class="container-fluid h-100 page-container">
     <div class="row text-center bg-white">
         <h1>Product Management</h1>
         <h5>Add a product</h5>
     </div>
 
-    <div class="row">
-        <div class="col-12">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
             <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ category_form | crispy }}
