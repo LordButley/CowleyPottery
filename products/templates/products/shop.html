@@ -10,9 +10,9 @@
                 Welcome to Cowley Pottery!
             </h1>
             <p>
-                Welcome to Cowley Pottery. In the heart of Devon, Helen crafts by hand all pieces from scratch in her
+                Welcome to Cowley Pottery. In the heart of Devon, we craft by hand all pieces from scratch in our
                 tiny little studio barely big enough for one person. If you'd like to see recent creations please visit
-                the shop. You can also find out more about Helen's journey and craft on the About page.
+                the shop. You can also find out more about our journey and craft on the About page.
                 <br>
                 Feel free to get in contact about any pieces you want but are unavailable and I'll get back to you.
             </p>
@@ -25,17 +25,6 @@
                 <a href="{% url 'all_products' %}?category=new">New in stock
                 </a>
             </div>
-            <!-- <div class="card text-bg-dark">
-                <img class="img-thumbnail" src="/media/all.jpg" class="card-img" alt="Lots of different pottery">
-                <div class="tile-overlay">
-                    <div class="tile-title p-2">
-                        <a href="{% url 'all_products'%}?category=new">
-                            <h6>New in stock</h6>
-                        </a>
-                    </div>
-
-                </div>
-            </div> -->
         </div>
     </div>
     <div class="row justify-content-around">
@@ -44,27 +33,17 @@
                 <a href="{% url 'all_products' %}">All products
                 </a>
             </div>
-            <!-- <div class="card text-bg-dark">
-                <img class="img-thumbnail" src="/media/all.jpg" class="card-img" alt="Lots of different pottery">
-                <div class="tile-overlay">
-                    <div class="tile-title p-2">
-                        <a href="{% url 'all_products' %}">
-                            <h6>All items</h6>
-                        </a>
-                    </div>
-
-                </div>
-            </div> -->
         </div>
     </div>
     <div class="row justify-content-center px-2">
+
         {% for category in categories %}
-
-
 
         <div class="col-sm-6 col-md-6 col-lg-3 col-xxl-3 pt-2 pb-2">
             <div class="card text-bg-dark ratio-4x3">
-                <a href="{% url 'all_products'%}?category={{category.name}}"><img class="img-thumbnail shop-tile rounded-3" src="/media/{{category.image }}" alt="{{category.name}} image"></a>
+                <a href="{% url 'all_products'%}?category={{category.name}}"><img
+                        class="img-thumbnail shop-tile rounded-3" src="/media/{{category.image }}"
+                        alt="{{category.name}} image"></a>
                 <div class="tile-overlay">
                     <div class="tile-title p-2">
                         <a href="{% url 'all_products'%}?category={{category.name}}">
@@ -75,8 +54,6 @@
             </div>
 
         </div>
-
-
 
         {% endfor %}
 
