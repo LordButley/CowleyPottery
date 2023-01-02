@@ -46,7 +46,7 @@
                                 <div class="form-group">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <button class="decrement-qty btn btn-black" 
+                                            <button class="decrement-qty btn " 
                                                 data-item_id="{{ item.product.id }}" id="decrement-qty_{{ item.product.id }}">
                                                 <span class="icon fs-2">
                                                     <i class="bi bi-patch-minus"></i>
@@ -58,7 +58,7 @@
                                             max="99" data-item_id="{{ item.product.id }}" id="id_qty_{{ item.product.id }}">
                                     
                                         <div class="input-group-append">
-                                            <button class="increment-qty btn btn-black"
+                                            <button class="increment-qty btn "
                                                 data-item_id="{{ item.product.id }}" id="increment-qty_{{ item.product.id }}">
                                                 <span class="icon fs-2">
                                                     <i class="bi bi-patch-plus"></i>
@@ -98,12 +98,12 @@
                     </tr>
                     <tr>
                         <td colspan="5" class="text-end fs-4">
-                            <span class="btn btn-black rounded-0 text-uppercase category-icons mt-2">
+                            <span class="btn  rounded-0 text-uppercase category-icons mt-2">
                                 <a href="{% url 'shop' %}">
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
                             </span>
-                            <span class="btn btn-black rounded-0 text-uppercase category-icons mt-2">
+                            <span class="btn  rounded-0 text-uppercase category-icons mt-2">
                                 <a href="{% url 'checkout' %}">
                                     <span class="text-uppercase">Secure Checkout</span>
                                     <span class="icon">
@@ -118,7 +118,7 @@
             {% else %}
             <p class="text-center fs-4 mt-3">Your bag is empty.</p>
             <div class="text-end">
-                <span class="btn btn-black rounded-0 text-uppercase category-icons mt-2">
+                <span class="btn  rounded-0 text-uppercase category-icons mt-2">
                     <a href="{% url 'shop' %}">
                         <span class="text-uppercase">Keep Shopping</span>
                     </a>

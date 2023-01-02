@@ -50,7 +50,7 @@
                             <div class="input-group">
                                 
                                 <div class="input-group-prepend">
-                                    <button class="decrement-qty btn btn-black" 
+                                    <button class="decrement-qty btn " 
                                         data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
                                         <span class="icon fs-2">
                                             <i class="bi bi-patch-minus"></i>
@@ -62,7 +62,7 @@
                                     max="{{stock_check | stock_left:product}}" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
                             
                                 <div class="input-group-append">
-                                    <button class="increment-qty btn btn-black"
+                                    <button class="increment-qty btn "
                                         data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
                                         <span class="icon fs-2">
                                             <i class="bi bi-patch-plus"></i>
@@ -83,7 +83,7 @@
                             </span>
                             <span class="text-uppercase">Keep Shopping</span>
                         </a>
-                        <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5 category-icons" value="Add to Bag">
+                        <input type="submit" class="btn  rounded-0 text-uppercase mt-5 category-icons" value="Add to Bag">
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 </div>
