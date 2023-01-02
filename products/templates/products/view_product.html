@@ -16,14 +16,14 @@
     <div class="row justify-content-center px-2">
 
 
-        <div class="col-12 col-sm-6 col-md-4 pt-2 pb-2">
+        <div class="col-12 col-sm-9 col-md-6 col-lg-4 pt-2 pb-2">
             <div class="card text-bg-dark  ratio-4x3">
                 <img class="img-thumbnail shop-tile rounded-3" src="{{ MEDIA_URL }}{{product.image }}"
                     alt="{{product.name}} image">
             </div>
 
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-xxl-3 pt-2 pb-2">
+        <div class="col-12 col-sm-9 col-md-6 col-lg-4 col-xxl-3 pt-2 pb-2">
             <p>
                 {{product.description}}
             </p>
@@ -42,7 +42,7 @@
                     <div class="col-12">
                         <p class="mt-3"><strong>Available: {{stock_check | stock_left:product}}</strong></p>
                         <p class="mt-3"><strong>Quantity:</strong></p>
-                        <div class="form-group w-50">
+                        <div class="form-group w-md-50">
                             <div class="input-group">
                                 
                                 <div class="input-group-prepend">

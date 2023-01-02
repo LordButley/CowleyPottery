@@ -67,50 +67,50 @@ The user stories can be found on the projects board.
 
 Website requires web pages containing information regarding the business and the items that are for sale. It also is necessary to have the means in which to traverse the website. User stories that address this 
 
-*As a customer I can view a list of products so that I can identify what products are available and view their images.
-*As a customer I can view individual products so that I can learn more about the item such as price, description, and quantity available.
-*As a customer I can quickly identify and traverse the website so that I can reach the desired part of the website.
-*As a customer I can quickly identify new stock so that I can purchase before it sells out.
-*As a customer I can always see the shopping basket total so that I can be aware of how much money I am spending.
-*As a customer I can view information regarding the business so that I can learn more about the artist who makes the items.
+* As a customer I can view a list of products so that I can identify what products are available and view their images.
+* As a customer I can view individual products so that I can learn more about the item such as price, description, and quantity available.
+* As a customer I can quickly identify and traverse the website so that I can reach the desired part of the website.
+*  As a customer I can quickly identify new stock so that I can purchase before it sells out.
+* As a customer I can always see the shopping basket total so that I can be aware of how much money I am spending.
+* As a customer I can view information regarding the business so that I can learn more about the artist who makes the items.
 
 #### Epic 2 - Account Registration and Access
 
 Users of the e-commerce website must be able to create personal accounts which are secure as well as following modern email confirmation norms. User stories that address this Epic are:
 
-*As a customer I can create an account so that I can Store personal details, view purchases and view my profile.
-*As a customer I can receive a registration confirmation email so that I can tell whether my account registration was successful.
-*As a customer I can recover or reset my password so that I can regain access to my account.
-*As a customer I can sign in using credentials so that I can gain access to my account whilst knowing that it is safe.
-*As a customer I can log out of my account so that I can secure my account.
+* As a customer I can create an account so that I can Store personal details, view purchases and view my profile.
+* As a customer I can receive a registration confirmation email so that I can tell whether my account registration was successful.
+* As a customer I can recover or reset my password so that I can regain access to my account.
+* As a customer I can sign in using credentials so that I can gain access to my account whilst knowing that it is safe.
+* As a customer I can log out of my account so that I can secure my account.
 
 #### Epic 3 - Products, search, categorisation and notification
 
 Customers of the e-commerce website must be able to search the website by name as well as view items by category. The website will be selling quality over quantity with limited stock and bespoke creations and as such notification of stock changes are essential. User stories that address this Epic are:
 
-*As a customer I can view products by category so that I can quickly view items of a particular type.
-*As a customer I can search for products by name or description so that I can find a specific item to buy quickly.
-*As a customer I can sign up for a newsletter so that I can keep up to date with stock changes.
+* As a customer I can view products by category so that I can quickly view items of a particular type.
+* As a customer I can search for products by name or description so that I can find a specific item to buy quickly.
+* As a customer I can sign up for a newsletter so that I can keep up to date with stock changes.
 
 #### Epic 4 - Purchasing and Checkout
 
 Customers must be able to view their shopping basket as well as add to it and edit any item within. They must be able to pay for their shopping basket securely and receive confirmation of purchase. User stories that address this Epic are:
 
-*As a customer I can view the shopping basket so that I can identify what is to be purchased and its total cost.
-*As a customer I can add items to shopping basket so that I can purchase them.
-*As a customer I can edit items in the shopping basket so that I can alter quantity of items in basket.
-*As a customer I can pay for items so that I can buy the item.
-*As a customer I can feel that my personal and payment information is safe and secure so that I can confidently provide the information needed to make a purchase.
-*As a customer I can see an order summary so that I can check my order before I click "pay now".
-*As a customer I can receive an email receipt so that I can have evidence of my purchase.
+* As a customer I can view the shopping basket so that I can identify what is to be purchased and its total cost.
+* As a customer I can add items to shopping basket so that I can purchase them.
+* As a customer I can edit items in the shopping basket so that I can alter quantity of items in basket.
+* As a customer I can pay for items so that I can buy the item.
+* As a customer I can feel that my personal and payment information is safe and secure so that I can confidently provide the information needed to make a purchase.
+* As a customer I can see an order summary so that I can check my order before I click "pay now".
+* As a customer I can receive an email receipt so that I can have evidence of my purchase.
 
 #### Epic 5 - Admin and Store Management
 
 The admin should be able to add new products to the store as well as edit others.
 
-*As a shop owner I can delete products through the admin site so that I can delete items.
-*As a shop owner I can add products through the admin site so that I can add new items.
-*As a shop owner I can edit products through the admin site so that I can change item prices, images and descriptions.
+* As a shop owner I can delete products through the admin site so that I can delete items.
+* As a shop owner I can add products through the admin site so that I can add new items.
+* As a shop owner I can edit products through the admin site so that I can change item prices, images and descriptions.
 
 ## Development Planes:
 
@@ -205,6 +205,7 @@ The images for this project are all genuine pieces from the store either taken b
 ## Features:
 There are several features on this site to help users get the most out of their visit to the site.  
 
+### Public pages
 ### Landing page:
 
 When users first travel to the site, they are met with a display of Cowley Pottery. The splash page navigation contains links to the Cowley Pottery Instagram and Facebook. The welcome paragraph is only visible on larger screens.
@@ -227,8 +228,19 @@ In the footer the shop name and it's address can be found alongside a newsletter
 
 ### Home page:
 
+On the homepage, the user has the choice to go to the about page, the shop and the commissions page via image anchor and via title anchor.
 
-&nbsp;
+![Homepage](media/readme/homepage.png)
+
+### About page:
+
+This page provides an insite into the shop owners life and craft.
+
+![About](media/readme/about.png)
+
+### Commissions page:
+
+![Commissions](media/readme/commissions.png)
 
 ### Shop page:  
 
@@ -242,7 +254,6 @@ There has been extra functionality added to only be able to buy what is in stock
 
 Note also when an item runs out of stock, it will remain on the website with a banner (to be added) until it is taken down intentionally. This is to give prospective buyers an idea for commissions as opposed to thinking they cannot purchase
 
-&nbsp;
 
 ### View Product page:  
 
