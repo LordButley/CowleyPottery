@@ -5,9 +5,6 @@
 {% block content %}
 <div class="container-fluid h-100 page-container">
     <div class="row justify-content-center bg-white">
-        <!-- <div class="col-12 col-md-4 my-auto">
-            <img class="img-fluid rounded-3" src="/media/homepage1.jpg" alt="Pottery examples">
-        </div> -->
         <div class="col-12 col-md-6 my-auto text-center">
             <h1>
                 {{product.name}}
@@ -40,7 +37,6 @@
                 </small>
             {% endif %}
             <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
-            <!-- <form class="form" action="javascript:alert( 'success!' );" method="POST"> -->
                 {% csrf_token %}
                 <div class="form-row">
                     <div class="col-12">
