@@ -9,14 +9,11 @@ def bag_contents(request):
     total = 0
     product_count = 0
     bag = request.session.get('bag', {})
-    # stock_check_objects = Product.objects.all()
     stock_check = {}
-    # for item in stock_check_objects:
-    #     stock_check.update({item.id: item.stock})
+
 
     for product_id, quantity in bag.items():
         product = get_object_or_404(Product, pk=product_id)
-        # stock_check[int(product_id)] = stock_check[int(product_id)] - quantity
         total += quantity * product.price
         stock_left = product.stock - quantity
         stock_check.update({int(product_id): stock_left})

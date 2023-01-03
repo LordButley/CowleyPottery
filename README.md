@@ -177,7 +177,6 @@ With the structure in place, it was then time to move onto the scope plane. This
       * Request a specific commision
       * Learn more about the store and the owner
 
-***
 
 ## Skeleton:
 Wireframes were created to set out the initial appearance of the website while also making sure to keep the end-user in mind at all times. Wireframes were created using [Balsamiq](https://balsamiq.com/). These mock ups were created for Mobile first and then for the desktop view.

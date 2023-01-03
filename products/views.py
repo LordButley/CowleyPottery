@@ -15,9 +15,7 @@ def shop(request):
     categories = Category.objects.all()
 
     context = {
-        # 'products': products,
         'categories': categories,
-        # 'product_categories': product_categories,
     }
 
     return render(request, 'products/shop.html', context)
