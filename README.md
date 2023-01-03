@@ -207,7 +207,15 @@ There are several features on this site to help users get the most out of their 
 
 ## Database design
 
+![Database Schema](media/readme/CowleyPotterySchema.png)
 
+The Database architecture for the design followed the standarad e-commerce design. The order details, order line item and user profile models are all dictated by postal addresses. As such these models are the same as the Boutique ado models.
+
+The product, category and product_category models contains all the information regarding the items to be sold and their categorisation. This schema was normalised to the Second Normal Form where every non-primary key column is functionally dependent on the entire primary key but not functionally dependent any subset. Normalization was used to keep the databases "clean" to allow for any expansion or adaptation at a later date.
+
+The next step with the order databases and user profiles is to normalize these databases.
+
+A simple commissions database has also been created.
 
 ### Public pages
 ### Landing page:
@@ -248,18 +256,25 @@ On this page users can fill out a basic form that sends a request to the sites s
 
 ![Commissions](media/readme/commissions.png)
 
-### Shop page:  
+### Shop page:
 
-Here the filtering of products is done through tiles rather than outdated dropdowns.
+The shop page is the where the items can be seen in their full glory.
 
-There is a new filter which returns products that have only been added the database within a certain timeframe.
+![Shop](media/readme/shop.png)
 
-Note that due to the nature of this website, there is little need for a search bar as at any given time there will only be a handful of items on sale. 
+Here the filtering of products is done through tiles rather than outdated dropdowns. There are currently six "categories" within which all the items lie although more can very easily be added. The first two "categories" are actually filters. The first presents all available shop items. Note the current stock levels are factually respresentative of the max total in stock. The second option is a "New in stock" button. This filters the products on the date they were added to the database (this is automatically generated at the model level). This is currently filtering for 4 weeks. There is an if statement to place a paragraph if there are no new items.
 
-There has been extra functionality added to only be able to buy what is in stock.
+Note that due to the nature of this website, there is little need for a search bar as at any given time there will only be a handful of items on sale. Furthermore the website is as much of an art gallery as it is a shop and so it is important that all patrons see as much of the wares as possible.
 
-Note also when an item runs out of stock, it will remain on the website with a banner (to be added) until it is taken down intentionally. This is to give prospective buyers an idea for commissions as opposed to thinking they cannot purchase
+The 4 categories are currently Kitchenware, Decorative, Seasonal and Special. If you click on a category, the options then appear in a clickable panel above the items.
 
+![Shop categories](media/readme/categories.png)
+
+These are created using a photo of the corresponding type and an overlay with the title.
+
+The tiles in the shop are all uniform, with the name of the item underneath as well as the price in 4.
+
+![Shop tiles](media/readme/shop tiles.png)
 
 ### View Product page:  
 
@@ -368,12 +383,29 @@ For this project, the following technologies were used.
 
 *** 
 
-## Reports and Credits:
+### Marketing and SEO:
 
-### Database Schema:
+The Marketting plan was deviced using a number of different mediums.
 
-### Marketing:
+1. The most important marketting was in person and Cowley Pottery has attended multiple crafts fair over the Christmas period with a banner and business cards with the Facebook and Instagram.
+2. A live Instagram account has been created. This was used to document each time a new item was created or a fair was attended. It also helps to give the public an insight into the creative process and the artist. This is the primary social media form. As a general rule, a new Instagram post was created once a fortnight when no in person selling events are taking place and more in the build up
+
+![Shop categories](media/readme/Cowley%20Pottery%20Instagram.png)
+
+3. A Facebook shop page was created to use as the secondary social media form. This is used for similar purposes to Instagram but also will be used to document fairs attended. It is also VERY beneficial for peer marketting where the markets that have been attended use this page within their advertisements.
+
+![Shop categories](media/readme/Cowley%20Pottery%20Facebook.png)
+
 Marketing has been extensively done through Instagram. There has been additional marketting through Facebook marketplace. And associate marketing through events. A thorough summary to be written here.
+
+SEO was tackled in a number of different ways
+
+1. There is extensive use of heading elements as well as semantic elements through out the code
+2. Keyword research has been conducted with the following list generated
+
+![Keyword](media/readme/keyword.png)
+
+The words/phrases were found using keyword search tools with those in black chosen to be used within the project as they yielded better results.
 
 ## Testing:
 
@@ -397,11 +429,11 @@ Lighthouse Reports
 
 ### Deployment and Development:
 
-***
+![Deployment document](DEPLOYMENT.md)
 
 ### Credits:
 * The initial setup of the Django project was done following the Code Institutes walkthrough project.  
-
+* To my partner for her design advice 
 
 ### Acknowledgements:
 
