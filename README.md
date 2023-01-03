@@ -203,7 +203,11 @@ Note the "Logo" is currently shown in Rampart One but this is a place holder as 
 The images for this project are all genuine pieces from the store either taken by me or by the customer. Some are even still available if you would like to purchase!
 
 ## Features:
-There are several features on this site to help users get the most out of their visit to the site.  
+There are several features on this site to help users get the most out of their visit to the site. 
+
+## Database design
+
+
 
 ### Public pages
 ### Landing page:
@@ -239,6 +243,8 @@ This page provides an insite into the shop owners life and craft.
 ![About](media/readme/about.png)
 
 ### Commissions page:
+
+On this page users can fill out a basic form that sends a request to the sites superuser. These requests are stored on the Commissions model and currently can be accessed on the website. In future they will also be emailed to the shop owner.
 
 ![Commissions](media/readme/commissions.png)
 
