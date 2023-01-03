@@ -278,71 +278,13 @@ The tiles in the shop are all uniform, with the name of the item underneath as w
 
 ### View Product page:  
 
-&nbsp;
+The product page shows a bigger picture of the item in question, a description as well as it's price and functionality to add it to the bag. You may only add the quantity up to what is in stock.
 
-### Basket: 
+![Product view](media/readme/itempage.png)
 
-&nbsp;
-
-### Checkout:
-
-
-&nbsp;
-
-### About us page:
-
-&nbsp;
-
-### Commisions page:
-
-&nbsp;
-
-### Sign up page:
-
-
-&nbsp;
-
-### Login page:
-
-
-&nbsp;
-
-### My Profle page:
- 
-
-&nbsp;
-
-### Logout page:
-
-&nbsp;
-
-### 404 error page:
-
-
-
-
-## Future Features:
-
-
-***
-
-
-***
 ## Testing
 
 Testing iterations, bugs, fixes and unresolved can be found here [Testing Document](TESTING.md)
-
-
-## Bugs:
-### jQuery - Toasts:
-Issue 
-* Fix
-
-&nbsp;
-
-
-***
-
 
 ## Technologies Used:
 For this project, the following technologies were used.  
@@ -407,9 +349,6 @@ SEO was tackled in a number of different ways
 
 The words/phrases were found using keyword search tools with those in black chosen to be used within the project as they yielded better results.
 
-## Testing:
-
-
 ### Validation:
 
 * HTML:
@@ -418,24 +357,10 @@ The words/phrases were found using keyword search tools with those in black chos
 
 * JavaScript: 
 
-* Python: 
-
-***
-
-### Accessibility:
-Lighthouse Reports
-
-***
-
 ### Deployment and Development:
 
-![Deployment document](DEPLOYMENT.md)
+[Deployment document](DEPLOYMENT.md)
 
 ### Credits:
 * The initial setup of the Django project was done following the Code Institutes walkthrough project.  
 * To my partner for her design advice 
-
-### Acknowledgements:
-
-
-*** 
