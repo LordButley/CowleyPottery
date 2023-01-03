@@ -27,7 +27,7 @@
                     <tr class="text-center">
                         <td class="p-3 w-25 d-none d-sm-table-cell">
                             {% if item.product.image %}
-                            <img class="img-fluid img-thumbnail shop-tile rounded" src="{{ item.product.image.url }}">
+                            <img class="img-fluid img-thumbnail shop-tile rounded" src="{{ item.product.image.url }}" alt="{{item.product.name}}">
                             {% endif %}
                         </td>
                         <td class="py-3">
@@ -53,7 +53,7 @@
                                         </div>
         
                                         <input class="form-control qty_input fs-4 rounded-3" type="number" name="quantity" value="1" min="1"
-                                            max="99" data-item_id="{{ item.product.id }}" id="id_qty_{{ item.product.id }}">
+                                            max="{{stock_check | stock_left:item.product}}" data-item_id="{{ item.product.id }}" id="id_qty_{{ item.product.id }}">
                                     
                                         <div class="input-group-append">
                                             <button class="increment-qty btn "
