@@ -4,11 +4,19 @@
    function handleEnableDisable(itemId) {
        var currentValue = parseInt($(`#id_qty_${itemId}`).val());
        var stockValue = parseInt($(`#stock_qty_${itemId}`).text());
-       var minusDisabled = currentValue < 2;
+       var bagValue = parseInt($(`#item_bag_qty_${itemId}`).text());
+       
+       console.log(bagValue);
+       var minusDisabled = currentValue < 1;
        var plusDisabled = currentValue >= stockValue ;
+       var plusDisabledBag = currentValue >= bagValue ;
+       console.log(plusDisabledBag);
+
        $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
        $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
-   }
+       $(`#increment-qtybag_${itemId}`).prop('disabled', plusDisabledBag);
+
+    }
 
    // Ensure proper enabling/disabling of all inputs on page load
    var allQtyInputs = $('.qty_input');
