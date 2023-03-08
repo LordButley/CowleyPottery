@@ -79,7 +79,7 @@
                             </span>
                             <span class="text-uppercase">Keep Shopping</span>
                         </a>
-                        <input type="submit" class="btn  rounded-0 text-uppercase mt-5 category-icons" value="Add to Bag">
+                        <input id="stopButton" type="submit" class="btn  rounded-0 text-uppercase mt-5 category-icons" value="Add to Bag">
                     </div>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                 </div>
@@ -94,6 +94,21 @@
 
     </div>
 </div>
+<script>
+    let stopButton = document.getElementById("stopButton");
+    let stockLeft = document.getElementById("stock_qty_{{product.id}}");
+    function checkStock(event){
+        // console.log("Clickcheck123");
+        // console.log(parseInt(stockLeft.innerText));
+
+
+        if (parseInt(stockLeft.innerText) == 0){
+            console.log("Inner Clickers");
+            event.preventDefault()
+        }
+    }
+    stopButton.addEventListener("click", checkStock);
+</script>
 {% endblock %}
 {% block postloadjs %}
 {{block.super}}
