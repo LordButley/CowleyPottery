@@ -30,13 +30,28 @@ def cache_checkout_data(request):
         return HttpResponse(content=e, status=400)
 
 
+def stock_update(request):
+         
+    bag = request.session.get('bag', {})
+
+    for product_id, product_data in bag.items():
+        try:
+            product = Product.objects.get(id=product_id)
+            if isinstance(product_data, int):
+                product.stock = product.stock - product_data
+                product.save()
+        except Product.DoesNotExist:
+            messages.error(request, (
+                "One of the products in your bag wasn't found in our database. "
+                "Please call us for assistance!")
+            )
+
+
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
-    print("what the hell is going on")
     print(request.method)
     if request.method == 'POST':
-        print("posted")
         bag = request.session.get('bag', {})
 
         form_data = {
@@ -162,7 +177,8 @@ def checkout_success(request, order_number):
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
-
+    print("bag.......", request.session['bag'])
+    stock_update(request)
     if 'bag' in request.session:
         del request.session['bag']
 
@@ -172,3 +188,4 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
+
