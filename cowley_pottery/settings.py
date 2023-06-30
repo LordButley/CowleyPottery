@@ -27,8 +27,8 @@ if os.path.isfile('env.py'):
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = False
+DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = False
 ALLOWED_HOSTS = ['cowley-pottery.herokuapp.com', '8000-lordbutley-cowleypotter-s68zbkf4o7g.ws-eu101.gitpod.io', 'www.cowleypottery.co.uk', 'www.cowleypottery.com', 'https://www.cowleypottery.com', '8000-lordbutley-cowleypotter-s68zbkf4o7g.ws-eu100.gitpod.io']
 
 

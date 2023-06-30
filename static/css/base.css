@@ -56,10 +56,15 @@ td {
 }
 
 .tile-image{
-    height:100%;
+    height:auto;
     min-width: 100%;
-    overflow:hidden;
-    object-fit: cover;
+    /* overflow:hidden; */
+    /* object-fit: cover; */
+}
+
+.tile-image-container{
+    overflow: hidden;
+
 }
 
 .shop-tile{
@@ -115,11 +120,11 @@ footer li {
 
 /* Change to min width */
 
-@media screen and (min-width: 768px){
+/* @media screen and (min-width: 768px){
     .tile-image-container{
         height:60%;
     }
-}
+} */
 
 /* Category icons */
 
